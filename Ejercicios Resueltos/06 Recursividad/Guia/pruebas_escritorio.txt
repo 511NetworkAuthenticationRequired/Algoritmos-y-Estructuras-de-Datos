@@ -1,0 +1,80 @@
+-------------------------------------------------------------5.1.1-------------------------------------------------------------
+
+Funcion Factorial(numero: entero): entero Es // con numero∈ℕ
+	Si (numero = 0) Entonces // Caso Base
+		Factorial:= 1
+	Sino // Caso Recursivo (numero > 0)
+		Factorial:= numero * Factorial(numero - 1)
+	FinSi
+FinFuncion
+
+Lo que hace si yo le paso tres (numero = 3) es:
+	factorial(3):= 3 * factorial(2)
+		3 * factorial(2) = 6
+			2 * factorial(1) = 2
+				1 * factorial(0) = 1
+	
+-------------------------------------------------------------5.1.3-------------------------------------------------------------
+
+Funcion Potencia(a, b: entero): entero Es
+	Si (b = 0) Entonces // Caso B
+		Potencia:= 1
+	Sino // Caso Recursivo
+		Potencia:= a * Potencia(a, b - 1)
+	FinSi
+FinFuncion
+
+Con a = 2 ^ b = 3
+1. b <> 0 => Potencia(2, 3) = 2 * Potencia(2, 3 - 1) = 2 * Potencia(2, 2) = 8
+2. b <> 0 => Potencia(2, 2) = 2 * Potencia(2, 1) = 4
+3. b <> 0 => Potencia(2, 1) = 2 * Potencia(2, 0) = 2
+4. b = 0 => Potencia(2, 0) = 1
+
+-------------------------------------------------------------5.1.4-------------------------------------------------------------
+
+Funcion DetectorPares(numero: entero): boooleano Es
+	Si ((numero DIV 10) <= 9) Entonces // Caso Base
+		Si ((numero MOD 2) = 0) Entonces
+			DetectorPares:= verdadero
+		Sino
+			DetectorPares:= falso
+		FinSi
+	Sino // Caso Recursivo
+		Si ((numero MOD 2) = 0) Entonces
+			DetectorPares:= verdadero
+		Sino
+			DetectorPares:= falso
+		FinSi
+		DetectorPares(numero DIV 10)
+	FinSi
+FinFuncion
+
+Con numero = 234
+1. 234 > 9 => 234 DIV 10 = 23
+2. 23 > 9 => 23 DIV 10 = 2
+3. 2 < 9 => numero MOD 2 = 0 => Detectorpares:= verdadero // NO FUNCIONA
+
+-------------------------------------------------------------5.2.4-------------------------------------------------------------
+
+Procedimiento CambioBase(numero: entero) Es
+    Si (numero < 2) Entonces
+        Escribir(numero)
+    Sino
+        CambioBase(numero DIV 2)
+        Escribir(numero MOD 2)
+    FinSi
+FinProcedimiento
+
+
+De 5 a binario:
+1. 5 > 2 => CambioBase(5 DIV 2) = CambioBase(2), Escribir(1)
+2. 2 = 2 => CambioBase(2 DIV 2) = CambioBase(0), Escribir(0)
+3. 0 < 2 => Escribir(1)
+Resultado: 101
+
+De 12 a binario:
+1. 12 > 2 => CambioBase(12 DIV 2) = CambioBase(6), Escribir(0)
+2. 6 > 2 => CambioBase(6 DIV 2) = CambioBase(3), Escribir(0)
+3. 3 > 2 => CambioBase(3 DIV 2) = CambioBase(1), Escribir(1)
+4. 1 < 2 => Escribir(1)
+Resultado: 1100

@@ -1,0 +1,15 @@
+sec_fila:
+|h|h|m|m|n|u|f|i|l|a|FP|CE|#|
+        num de fila
+
+sec_compras:
+
+|n|u|f|i|l|a|nombre usuario|+|4|6|7|7|7|Nombre|.|4|8|7|7|7|Nombre 2|.|4|5|7|7|7|Nombre 3|?|
+               indefinido        DNI
+
+sec_compras con usuario que dejo fila:
+
+|#|+|?|
+
+
+|1|2|3|4|5|6|+|4|5|6|6|6|6|6|6|+|4|7|6|6|6|6|6|6|#|
