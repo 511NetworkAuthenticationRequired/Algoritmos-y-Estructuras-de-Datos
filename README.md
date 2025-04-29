@@ -2,7 +2,7 @@ Este repositorio lo fui armando mientras cursaba, y está basado principalmente 
 
 Recomiendo arrancar por la [introducción](Pseudocodigo/Introduccion), y luego ir viendo las [estructuras de control](Pseudocodigo/Estructuras%20de%20Control). Luego revisar las estructuras de datos que te interesen, pero el siguiente orden es el recomendado:
 1. Secuencias
-2. Archivos Ordenados
+2. Archivos Secuenciales
 3. Archivos Indexados
 4. Arreglos
 5. Árboles
