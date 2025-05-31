@@ -5,8 +5,8 @@ Recomiendo arrancar por la [introducción](Pseudocodigo/Introduccion), y luego i
 2. Archivos Secuenciales
 3. Archivos Indexados
 4. Arreglos
-5. Árboles
-6. Listas
+5. Listas
+6. Árboles
    
 Una vez que conoces las estructuras, te fijás bien [complejidad y eficiencia](Pseudocodigo/Complejidad%20Algoritmica). Recursividad recomiendo ver junto con árboles porque la misma naturaleza de la estructura permite visualizar "gráficamente", aunque por ahí si se te dan las matemáticas, algunos ejercicios iterativos te van a parecer más fáciles de resolver con recursión. Sin embargo, conviene que sigas el plan de estudio.
 
